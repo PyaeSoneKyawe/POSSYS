@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="possysDataSet" targetNamespace="http://tempuri.org/possysDataSet.xsd" xmlns:mstns="http://tempuri.org/possysDataSet.xsd" xmlns="http://tempuri.org/possysDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="possysConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="possysConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.POSSYS.Properties.Settings.GlobalReference.Default.possysConnectionString1" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="region_gpTableAdapter" GeneratorDataComponentClassName="region_gpTableAdapter" Name="region_gp" UserDataComponentName="region_gpTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="possysConnectionString1 (Settings)" DbObjectName="possys.region_gp" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `Name` FROM `region_gp`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="possysDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="possysDataSet" msprop:Generator_UserDSName="possysDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="region_gp" msprop:Generator_TableClassName="region_gpDataTable" msprop:Generator_TableVarName="tableregion_gp" msprop:Generator_TablePropName="region_gp" msprop:Generator_RowDeletingName="region_gpRowDeleting" msprop:Generator_RowChangingName="region_gpRowChanging" msprop:Generator_RowEvHandlerName="region_gpRowChangeEventHandler" msprop:Generator_RowDeletedName="region_gpRowDeleted" msprop:Generator_UserTableName="region_gp" msprop:Generator_RowChangedName="region_gpRowChanged" msprop:Generator_RowEvArgName="region_gpRowChangeEvent" msprop:Generator_RowClassName="region_gpRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
